@@ -155,3 +155,23 @@ var wow = new WOW({
 	mobile: true // trigger animations on mobile devices (default is true)
 });
 wow.init();
+
+
+var initSubject = '', initBody = '';
+//按下傳送按鈕後執行submitHandler
+function submitHandler(){
+    var to = "business@47662000.xyz";
+//固定傳送信箱，不會顯示在網頁上
+    var subject = subText.value;
+//讀取ID為 subText物件中的值，我們在上方的input物件已經先設好這個id了
+//把user 填的 msgText、nameText、emailText 給 body 
+    var body = ""+msgText.value+'%0A%0A%0A';
+//%0A換行 換3行
+        body += "From："+nameText.value+'%0A';
+        body += "Email："+emailText.value+'%0A';
+//打開mail app與傳送給mail app
+    mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
+    mailTo.click();
+//這裡我們藉由將先宣告的a標籤超連結地址改為”mailto:”，瀏覽器就會幫我們打開信箱的預設應用程式，並把所有使用者輸入好的資訊帶進去，接著我們讓a標籤觸發click()，以此觸發這個超連結
+	
+}

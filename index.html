@@ -1153,9 +1153,9 @@ Start Our Team
 			<!-- Contact Details -->
 			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
 				<h3>聯絡方式</h3>
-				<p>請透過伺服器內直接與我們聯絡或留下告示牌
+				<p>請透過伺服器內直接與我們聯絡或填寫此表格送出
 					<br>為了感謝這個HTML模板的開發者
-					<br>這裡的聯絡資訊都是他的聯絡資訊</p>
+					<br>其他的聯絡資訊都是他的聯絡資訊</p>
 				<div class="contact-details">
 					<div class="con-info clearfix">
 						<i class="tf-map-pin"></i>
@@ -1185,23 +1185,24 @@ Start Our Team
 				<form id="contact-form" role="form">
 
 					<div class="form-group">
-						<input type="text" placeholder="你的名字" class="form-control" name="name" id="name">
+						<input type="text" placeholder="名稱" id="nameText" class="form-control" name="name" id="name">
 					</div>
 
 					<div class="form-group">
-						<input type="email" placeholder="你的Email" class="form-control" name="email" id="email">
+						<input type="email" placeholder="Email" id="emailText" class="form-control" name="email" id="email">
 					</div>
 
 					<div class="form-group">
-						<input type="text" placeholder="主旨" class="form-control" name="subject" id="subject">
+						<input type="text" placeholder="主旨" id="subText" class="form-control" name="subject" id="subject">
 					</div>
 
 					<div class="form-group">
-						<textarea rows="6" placeholder="訊息" class="form-control" name="message" id="message"></textarea>
+						<textarea rows="6" placeholder="訊息" id="msgText" class="form-control" name="message" id="message"></textarea>
 					</div>
 
-					<div id="fake-submit">
-						<input  type="button" id="contact-submit" class="btn btn-transparent" value="按了沒用">
+					<div id="form-button">
+						<input  type="button" id="contact-submit" class="btn btn-transparent" value="送出訊息" onclick="submitHandler();">
+						<a id="mailTo"></a>
 					</div>
 
 				</form>
