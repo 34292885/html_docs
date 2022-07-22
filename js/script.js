@@ -155,7 +155,14 @@ var wow = new WOW({
 	mobile: true // trigger animations on mobile devices (default is true)
 });
 wow.init();
+// End Animated section
 
+
+
+
+/* ========================================================================= */
+/*	Contact Form section
+/* ========================================================================= */
 
 var initSubject = '', initBody = '';
 //按下傳送按鈕後執行submitHandler
@@ -173,5 +180,5 @@ function submitHandler(){
     mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
     mailTo.click();
 //這裡我們藉由將先宣告的a標籤超連結地址改為”mailto:”，瀏覽器就會幫我們打開信箱的預設應用程式，並把所有使用者輸入好的資訊帶進去，接著我們讓a標籤觸發click()，以此觸發這個超連結
-	
+//	End Contact Form section
 }
