@@ -167,7 +167,7 @@ wow.init();
 var initSubject = '', initBody = '';
 //按下傳送按鈕後執行submitHandler
 function submitHandler(){
-    var to = "business@47662000.xyz";
+    var to = "fullgo@livemail.tw";
 //固定傳送信箱，不會顯示在網頁上
     var subject = subText.value;
 //讀取ID為 subText物件中的值，我們在上方的input物件已經先設好這個id了
